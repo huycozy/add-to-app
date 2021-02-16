@@ -1,0 +1,24 @@
+name: flutter_module
+description: A new Flutter module.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^4.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+flutter:
+  uses-material-design: true
+  module:
+    androidX: true
+    androidPackage: com.example.flutter_module
+    iosBundleIdentifier: com.example.flutterModule
