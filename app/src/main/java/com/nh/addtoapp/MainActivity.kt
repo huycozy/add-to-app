@@ -1,11 +1,11 @@
 package com.nh.addtoapp
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import io.flutter.embedding.android.FlutterActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var counterLabel: TextView
@@ -18,10 +18,11 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.launch_button)
 
         button.setOnClickListener {
-            val intent = FlutterActivity
-                    .withCachedEngine(ENGINE_ID)
-                    .build(this)
-            startActivity(intent)
+//            val intent = FlutterActivity
+//                    .withCachedEngine(ENGINE_ID)
+//                    .build(this)
+//            startActivity(intent)
+            startActivity(Intent(this, DynamicLinkFlutterActivity::class.java))
         }
 
     }
